@@ -1,0 +1,29 @@
+.wrapper {
+
+    width:80%;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.weatherContainer{
+    margin-top: 5%;
+}
+
+.temperature {
+    display:flex;
+    justify-content: center;
+    margin-bottom:2%;
+    
+}
+
+.userLocation {
+    display:flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 20px 15px;
+    margin-right:2px;
+    border-radius:2%;
+    background-color:lightslategray;
+}
