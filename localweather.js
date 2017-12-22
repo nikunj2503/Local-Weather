@@ -55,7 +55,13 @@ $( document ).ready(function() {
                 'background-image':'url(scatteredClouds.jpg)',
                 'background-size': 'cover'
             });
+        } else if(response.weather[0].description === 'broken clouds') {
+            $('body').css({
+                'background-image':'url(brokenClouds.jpg)',
+                'background-size': 'cover'
+            });
         }
+        
     }
     
 
