@@ -46,7 +46,15 @@ $( document ).ready(function() {
         $('.windSpeed').html(html);
 
         if(response.weather[0].description === 'clear sky') {
-            $('body').css('background-image','url(clearsky.jpg)');
+            $('body').css({
+                'background-image':'url(clearsky.jpg)',
+                'background-size': 'cover'
+            });
+        } else if(response.weather[0].description === 'scattered clouds') {
+            $('body').css({
+                'background-image':'url(scatteredClouds.jpg)',
+                'background-size': 'cover'
+            });
         }
     }
     
